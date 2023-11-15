@@ -1,29 +1,24 @@
 'use client';
 
-import { cn } from '@/lib/utils';
 import { zodResolver } from '@hookform/resolvers/zod';
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import { useForm } from 'react-hook-form';
-import { LuHeading1, LuSeparatorHorizontal } from 'react-icons/lu';
+import { LuSeparatorHorizontal } from 'react-icons/lu';
 import * as z from 'zod';
 import {
 	ElementsType,
 	FormElement,
-	FormElementInstance,
-	SubmitFunction,
+	FormElementInstance
 } from '../FormElements';
 import useDesigner from '../hooks/useDesigner';
 import {
 	Form,
 	FormControl,
-	FormDescription,
 	FormField,
 	FormItem,
-	FormLabel,
+	FormLabel
 } from '../ui/form';
-import { Input } from '../ui/input';
 import { Label } from '../ui/label';
-import { Switch } from '../ui/switch';
 import { Slider } from '../ui/slider';
 
 const type: ElementsType = 'SpacerField';
